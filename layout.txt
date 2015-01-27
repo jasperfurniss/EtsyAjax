@@ -1,0 +1,6 @@
+1. Load page with blank search box.
+2. Event listener for button. Console.log(term)
+3. Add terms to URL. Console.log(url)
+4. Store term in var
+5. Ajax request (GET) console.log(DATA)
+6. Empty Container & render items

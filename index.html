@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<header>
+  <a href="/?ref=lgo" id="logo">Etsy</a>
+</header>
+
+<body>
+  <div id="DIV_1">
+    <h1 id="H1_2">
+      “cactus”
+      <span id="SPAN_3">We found 20,332 items!</span>
+      <div class="element"></div>
+      <center>
+        <input class="input" id="search-box" placeholder="Awesome Etsy Item" onkeydown="search(this)" />
+      </center>
+    </h1>
+    <div id="DIV_4">
+
+      <label id="LABEL_5">
+        Sort by:
+      </label>
+      <span id="SPAN_6">
+        <span id="SPAN_7">
+          <a href="#" id="trigger">Relevancy</a>
+          <span id="SPAN_9"></span>
+        </span>
+      </span>
+      <ul id="UL_10">
+        <li id="LI_11">
+          <a href="https://www.etsy.com/search?q=cactus&amp;order=date_desc&amp;page=1" id="A_12">
+            <span id="SPAN_13">Most Recent</span>
+          </a>
+        </li>
+        <li id="LI_14">
+          <a href="https://www.etsy.com/search?q=cactus&amp;order=most_relevant&amp;page=1" id="A_15">
+            <span id="SPAN_16">Relevancy</span>
+          </a>
+        </li>
+        <li id="LI_17">
+          <a href="https://www.etsy.com/search?q=cactus&amp;order=price_desc&amp;page=1" id="A_18">
+            <span id="SPAN_19">Highest Price</span>
+          </a>
+        </li>
+        <li id="LI_20">
+          <a href="https://www.etsy.com/search?q=cactus&amp;order=price_asc&amp;page=1" id="A_21">
+            <span id="SPAN_22">Lowest Price</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="DIV_23">
+    </div>
+    <div id="DIV_24">
+      <form id="FORM_25">
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <div id="drop">
+      <a href="#">Most Recent</a>
+      <a href="#">Relevancy</a>
+      <a href="#">Highest Price</a>
+      <a href="#">Lowest Price</a>
+    </div>
+
+  </div>
+
+
+  <div class="data">
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/template" data-template-name="cactus-item">
+
+    <div class="items">
+      <span>
+        <img class="pictures" src="<% image %>" />
+      </span>
+      <span>
+        <p>
+          <% title %>
+        </p>
+      </span>
+      <span class="cost">
+        <% cost %>
+      </span>
+    </div>
+
+  </script>
+  <script type="text/javascript" src="scripts/data.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
